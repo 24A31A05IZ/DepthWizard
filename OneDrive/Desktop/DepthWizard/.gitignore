@@ -1,0 +1,79 @@
+# DepthWizard (SIH26175) — Git Ignore Configuration
+
+# Node / Frontend Build Artifacts
+node_modules/
+dist/
+frontend/dist/
+frontend/node_modules/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python Build & Cache Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+build/
+develop-eggs/
+downloads/
+eggs/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+
+# Python Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Downloaded AI Model Binaries & Weights
+backend/models/
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+.cache/
+
+# Local User Session Uploads & Generated Outputs
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+
+# Large Cached Benchmark Samples
+backend/samples/images/
+backend/samples/heights/
+backend/samples/gamus/
+*.h5
+*.hdf5
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE & Editor Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
